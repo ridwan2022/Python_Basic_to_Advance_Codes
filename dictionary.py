@@ -47,13 +47,13 @@ print(student2)
 # Create a dictionary of 5 students and their marks.
 # Print the student with the highest marks.
 
-student2 = {
-    "s1":{"name": "abdul" ,"marks":10},
-    "s2":{"name": "rahim" ,"marks":20},
-    "s3":{"name": "bulbul" ,"marks":30},
-    "s4":{"name": "shakir" ,"marks":40},
-    "s5":{"name": "jabbar" ,"marks":50},
-}
+# student2 = {
+#     "s1":{"name": "abdul" ,"marks":10},
+#     "s2":{"name": "rahim" ,"marks":20},
+#     "s3":{"name": "bulbul" ,"marks":30},
+#     "s4":{"name": "shakir" ,"marks":40},
+#     "s5":{"name": "jabbar" ,"marks":50},
+# }
 # for value in student2.values():
 #print(student2["s1"]["marks"])
 
@@ -75,8 +75,33 @@ student2 = {
 
 
 # # printing highest marks METHOD 3
-largest = 0
-for x in student2:
-    if largest < student2[x]["marks"]:
-        largest = student2[x]["marks"]
-print(largest) 
+# largest = 0
+# for x in student2:
+#     if largest < student2[x]["marks"]:
+#         largest = student2[x]["marks"]
+# print(largest) 
+
+# Problem 2: Update Dictionary
+# Task: Start with this inventory dictionary:
+# inventory = {"apples": 5, "bananas": 2, "oranges": 3}
+# Perform these operations:
+# Add 10 more apples
+# Remove all bananas
+# Add a new fruit "grapes" with quantity 8
+
+# Solution
+# inventory = {"apples": 5, "bananas": 2, "oranges": 3}
+
+# print(inventory)
+
+# inventory["apples"]= inventory["apples"]+10
+# print(inventory)
+
+# #inventory["bananas"]= inventory["bananas"]-inventory["bananas"]
+# #del inventory["bananas"] #this deletes the whole banana from dictionary
+# print(inventory)
+
+# inventory.update({"grapes":8})
+# #or this way/ both is correct 
+# # #inventory["grapes"] = 8
+# print(inventory)
